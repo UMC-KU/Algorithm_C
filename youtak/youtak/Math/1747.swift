@@ -1,4 +1,4 @@
-// 21275 22943 1747
+// 21275 22943
 import Foundation
 
 func isPrime(_ input: Int) -> Bool{
