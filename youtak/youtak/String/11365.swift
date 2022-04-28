@@ -9,4 +9,4 @@ while(true) {
     print(String(input.reversed()))
 }
 
-6
+

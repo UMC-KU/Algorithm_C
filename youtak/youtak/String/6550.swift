@@ -1,24 +1,23 @@
-//6550 - n
+//6550
 import Foundation
 
 while let input = readLine() {
-    var result = false
-    
+
     let arr = input.components(separatedBy: " ")
-    let s = Array(arr[0])
-    var t = Array(arr[1])
-   
-    for i in s {
-        if(t.contains(i)) {
-            t.remove(at: t.firstIndex(of: i)!)
-        } else {
-            result = false
-            break
+    let s = arr[0]
+    let t = arr[1]
+    var i = 0
+    var result = false
+
+    for j in t {
+        if j == s[s.index(s.startIndex, offsetBy: i)] {
+            i += 1
+            if (i == s.count) {
+                result = true
+                break
+            }
         }
-        result = true
     }
-    
+
     result ? print("Yes") : print("No")
 }
-
-
