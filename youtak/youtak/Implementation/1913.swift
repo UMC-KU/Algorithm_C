@@ -11,9 +11,6 @@ var snale = Array(repeating: 0, count: count)
 while count >= 0 {
     
     snale[y * N + x] = count
-    if y < N {
-        y += 1
-    }
     
     count -= 1
 }
@@ -25,5 +22,5 @@ for i in 0..<N {
     print("")
 }
 
-let index = snale.firstIndex(of: num)!
-print(index / N, index % N)
+//let index = snale.firstIndex(of: num)!
+//print(index / N, index % N)
